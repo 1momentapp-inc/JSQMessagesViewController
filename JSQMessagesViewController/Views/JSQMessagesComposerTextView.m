@@ -227,7 +227,8 @@
 }
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-    [UIMenuController sharedMenuController].menuItems = nil;
+//	This blows away custom menus…
+//    [UIMenuController sharedMenuController].menuItems = nil;
     return [super canPerformAction:action withSender:sender];
 }
 @end
